@@ -1,7 +1,10 @@
 import Vue from 'vue'
 import App from './App.vue'
+import { Carousel3d, Slide } from 'vue-carousel-3d'
 
 Vue.config.productionTip = false
+Vue.component('carousel-3d',Carousel3d);
+Vue.component('slide', Slide);
 
 new Vue({
   render: h => h(App),

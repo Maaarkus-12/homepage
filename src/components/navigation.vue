@@ -1,6 +1,6 @@
 <template>
-    <div>
-        <navigation class="navbar nav-menu" role="navigation" aria-label="main navigation">
+    <div >
+        <navigation id="menu" class="navbar nav-menu" role="navigation" aria-label="main navigation">
             <div id="mv_left" class="navbar-brand">
                 <a class="navbar-item">
                     <img src="@/assets/LogoHD.png" class="scale">
@@ -21,7 +21,13 @@
                                 Home
                             </a>
                             <a class="navbar-item white">
+                                Our Company
+                            </a>
+                            <a class="navbar-item white">
                                 Services
+                            </a>
+                            <a class="navbar-item white">
+                                The Team
                             </a>
                             <a class="navbar-item white">
                                 About Us
@@ -39,14 +45,26 @@
     </div>
 </template>
 
+<script>
+export default {
+  name: 'menu',
+  components: {
+  }
+}
+</script>
+
+
 <style scoped>
     #mv_left{
         margin-left: 10px;
     }
 
     .nav-menu{
+        /* position: fixed; */
+        width: 100%;
         margin-top: -60px;
         background-color: black;
+        height: calc(100vh - 93.6vh);
     }
     .white{
         color: white;

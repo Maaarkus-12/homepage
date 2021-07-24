@@ -31,10 +31,6 @@ export default {
     min-height: 100vh;
   }
 
-  .bgc-home{
-    background-color: #050004;
-  }
-
   .primary-color{
     color: rgb(189, 0, 129);
   }
